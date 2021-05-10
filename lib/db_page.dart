@@ -129,7 +129,7 @@ class _DBTestPageState extends State<DBTestPage> {
                 label: Text('NAME'),
               ),
               DataColumn(
-                label: Text('TIME'),
+                label: Text('EDIT'),
               ),
               DataColumn(
                 label: Text('DELETE'),
@@ -138,6 +138,7 @@ class _DBTestPageState extends State<DBTestPage> {
             rows: employees
                 .map(
                   (employee) => DataRow(cells: [
+                    DataCell(),
                     DataCell(
                       Text(employee.name),
                       onTap: () {
